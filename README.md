@@ -77,4 +77,7 @@ function get_icon( $icon, $category ) {
             'svg' => file_get_contents( $filename )
         }
 }
+
+// Get the `bluetooth` icon from the `device` category
+$icon = get_icon( 'bluetooth', 'device' );
 ```
