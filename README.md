@@ -58,3 +58,23 @@ function get_category_icons( $category ) {
 // Get all `device` icons
 $categoryIcons = get_category_icons( 'device' );
 ```
+
+### Get specific icon
+```
+<?php
+
+// Get the `icons` directory (relative to this file)
+$dir = dirname( __FILE__ ) . '/icons';
+
+// Get specific icon in category
+function get_icon( $icon, $category ) {
+    $filename = "$dir/$category/$icon.svg";
+
+    if( file_exists( $filename ) )
+        return array(
+            'name' => $icon,
+            'category' => $category,
+            'svg' => file_get_contents( $filename )
+        }
+}
+```
