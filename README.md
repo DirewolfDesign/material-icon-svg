@@ -81,3 +81,9 @@ function get_icon( $icon, $category ) {
 // Get the `bluetooth` icon from the `device` category
 $icon = get_icon( 'bluetooth', 'device' );
 ```
+
+## Support
+
+Like this package? Consider buying us a coffee on Ko-Fi!
+
+<a href='https://ko-fi.com/R6R640ZDZ' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi4.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
